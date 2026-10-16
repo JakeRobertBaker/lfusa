@@ -97,9 +97,42 @@ a {
   color: var(--text-muted);
 }
 
+/* Event summary inside the signup card */
+.event-details {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d5dae2;
+  text-align: center;
+}
+
+.signup-form h2 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.event-details h2 {
+  font-size: 24px;
+}
+
+.event-details p {
+  margin: 0 0 12px;
+}
+
+.event-details .event-donation {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #5a6678;
+}
+
+.btn:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
 /* Sign-up form */
 .signup-form {
-  max-width: 400px;
+  max-width: 440px;
   margin: 0 auto;
   background: var(--white);
   color: var(--usa-blue-dark);
@@ -133,7 +166,7 @@ a {
   border: 1px solid #d5dae2;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   background: var(--off-white);
   color: var(--usa-blue-dark);
 }
@@ -180,6 +213,10 @@ a {
 
 /* Responsive */
 @media (max-width: 480px) {
+  .hero {
+    padding: 32px 0;
+  }
+
   .signup-form {
     padding: 24px 20px;
   }
